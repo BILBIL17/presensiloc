@@ -1,0 +1,133 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gunakan font yang mudah dibaca */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #34495e;
+  text-align: center;
+}
+
+/* Info dan camera section */
+.info {
+  margin-bottom: 20px;
+}
+
+#datetime, #location {
+  font-weight: bold;
+}
+
+.camera {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#video {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#canvas {
+  display: none;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Tabel presensi */
+#presensi-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+#presensi-table th, #presensi-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#presensi-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+#presensi-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#presensi-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  #video {
+    max-width: 100%;
+  }
+
+  #presensi-table th, #presensi-table td {
+    padding: 8px 10px;
+  }
+}

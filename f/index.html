@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presensi Kerja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Presensi Kerja</h1>
+    <div class="info">
+      <p><strong>Tanggal dan Waktu:</strong> <span id="datetime"></span></p>
+      <p><strong>Lokasi:</strong> <span id="location">Mengambil lokasi...</span></p>
+    </div>
+    <div class="camera">
+      <video id="video" autoplay></video>
+      <canvas id="canvas" class="hidden"></canvas>
+    </div>
+    <button id="capture-btn">Ambil Selfie</button>
+    <img id="selfie" class="hidden" alt="Hasil Selfie">
+    <button id="submit-btn" class="hidden">Simpan Presensi</button>
+    <button id="masuk-btn">Jam Masuk</button>
+    <button id="pulang-btn">Jam Pulang</button>
+    
+    <!-- Tabel untuk menampilkan data presensi -->
+    <h2>Data Presensi</h2>
+    <table id="presensi-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tanggal & Waktu</th>
+          <th>Lokasi</th>
+          <th>Selfie</th>
+          <th>Jam Masuk</th>
+          <th>Jam Pulang</th>
+        </tr>
+      </thead>
+      <tbody id="presensi-table-body">
+        <!-- Data presensi akan ditampilkan di sini -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
